@@ -1,5 +1,4 @@
 <?php
-
 use PHPUnit\Framework\TestCase;
 
 class UserRightsSystemTest extends TestCase {
@@ -21,7 +20,7 @@ class UserRightsSystemTest extends TestCase {
 
     public function testListGroups() {
         $response = $this->system->listGroups();
-        $this->assertIsArray($response);
+        $this->assertInternalType('array', $response);
     }
 
     public function testGetUserRights() {
@@ -41,4 +40,4 @@ class UserRightsSystemTest extends TestCase {
         $this->assertEquals(array('success' => true), $response);
     }
 }
-
+?>

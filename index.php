@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: application/json');
+require 'vendor/autoload.php';
 require 'src/UserRightsSystem.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
